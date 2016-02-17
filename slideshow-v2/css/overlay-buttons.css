@@ -1,0 +1,29 @@
+body {
+	background-color: #3c3c3c;
+}
+
+h1 {
+	color: #fff;
+}
+
+div {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+button {
+	height: 400px;
+	width: 70px;
+	background-color: transparent;
+	z-index:2;
+	position: relative;
+}
+
+#left-button {
+	margin-right: -70;
+}
+
+#right-button {
+	margin-left: -70;
+	z-index:2;
+}
