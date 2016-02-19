@@ -20,20 +20,64 @@ button {
 }
 
 #left-button {
-    display: none;
+    /*display: none;*/
 }
 
 #right-button {
-    display: none;
+    /*display: none;*/
 }
 
+/*#container #left-button {
+    transition: margin-right 3s ease-in;
+    -webkit-transition: margin-right 3s ease-in;
+}
+*/
 #container:hover #left-button {
     margin-right: -70;
     display: inline;
+    transition: display .2s ease;
+    -webkit-transition: display .2s ease;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
 }
 
 #container:hover #right-button {
     margin-left: -70;
     display: inline;
     z-index:2;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
 }
+
+/*#main-image {
+    margin-left: -70px;
+}*/
+
+#box {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    background-color: #cf00ff;
+    transition: width 3s, height 2s, ease-in;
+    -moz-transition: width 3s, height 2s, ease-in;
+    -webkit-transition: width 3s, height 2s, ease-in;
+    -o-transition: width 3s, height 2s, ease-in;
+    -ms-transition: width 3s, height 2s, ease-in;
+}
+
+#box:hover {
+    height: 300px;
+    width:300px;
+    transition: width 3s, height 2s, ease-in;
+    -moz-transition: width 3s, height 2s, ease-in;
+    -webkit-transition: width 3s, height 2s, ease-in;
+    -o-transition: width 3s, height 2s, ease-in;
+    -ms-transition: width 3s, height 2s, ease-in;
+}
+
