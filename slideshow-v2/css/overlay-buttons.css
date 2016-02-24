@@ -20,23 +20,25 @@ button {
 }
 
 #left-button {
-    /*display: none;*/
+    position: relative;
+    left: 183px;
 }
 
 #right-button {
-    /*display: none;*/
+    position: relative;
+    left: 176px;
 }
 
-/*#container #left-button {
-    transition: margin-right 3s ease-in;
-    -webkit-transition: margin-right 3s ease-in;
+#container {
+    left: 213px;
+    position: relative;
+    width: 548px;
 }
-*/
+
 #container:hover #left-button {
-    margin-right: -70;
+    left: 254px;
     display: inline;
-    transition: display .2s ease;
-    -webkit-transition: display .2s ease;
+    transition: all .2s ease;
     -moz-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
@@ -44,7 +46,7 @@ button {
 }
 
 #container:hover #right-button {
-    margin-left: -70;
+    left: 106;
     display: inline;
     z-index:2;
     transition: all .2s ease;
@@ -55,9 +57,10 @@ button {
     -ms-transition: all .2s ease-in;
 }
 
-/*#main-image {
-    margin-left: -70px;
-}*/
+#main-image {
+    left: 180px;
+    position: relative;
+}
 
 #box {
     margin-top: 20px;
