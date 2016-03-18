@@ -22,11 +22,23 @@ button {
 #left-button {
     position: relative;
     left: 183px;
+
+    transition: all .2s ease;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
 }
 
 #right-button {
     position: relative;
     left: 176px;
+
+    transition: all .2s ease;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-in;
 }
 
 #container {
@@ -50,7 +62,6 @@ button {
     display: inline;
     z-index:2;
     transition: all .2s ease;
-    -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;

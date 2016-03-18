@@ -1,0 +1,27 @@
+
+.images {
+    display: inline-block;
+    position: relative;
+}
+
+.images div {
+    width: 200px;
+    height: 100px;
+    background-color: #6c6c6c;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 0px;
+    padding: 10px;
+}
+
+.images {
+	left: 0px;
+
+	transition: left .3s ease;
+    -moz-transition: left .3s ease-in;
+    -webkit-transition: left .3s ease-in;
+    -o-transition: left .3s ease-in;
+    -ms-transition: left .3s ease-in;
+}
