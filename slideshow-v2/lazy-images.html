@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Lazy Load exersise</title>
+	<style type="text/css">
+		img {
+			opacity: 0;
+			transition: opacity 5s;
+		}
+
+		img.active {
+			opacity: 1;
+		}
+	</style>
+	<script type="text/javascript">
+	// window.addEventListener("load", setImage)
+function setImage () {
+
+	var i = 0;
+	var image = document.getElementsByTagName("img");
+
+	function myLoop(){                 //  create a loop function
+		setTimeout(function () {      //  call a 3s setTimeout when the loop is called
+	      	console.log(i);          
+		    var imageSrc = image[i].dataset.src;
+			image[i].src = imageSrc;
+			image[i].classList.add('active');
+		    i++;                     //  increment the counter  
+		    if (i < image.length) {            //  if the counter < 10, call the loop function
+		        myLoop();             //  ..  again which will trigger another 
+		    }                        //  ..  setTimeout()
+   		}, 3000)
+	}
+
+	myLoop(); 
+}
+
+//LOADING JUST ONE IMAGE
+	// function setImage (){
+	// 	var image = document.getElementsByTagName("img");
+	// 	console.log('get Elements');
+	// 	for (var i = 0; i < image.length; i++) {
+	// 		console.log(i);
+	// 		var imageSrc = image[i].dataset.src;
+	// 		image[i].src = imageSrc;
+	// 		image[i].classList.add('active');
+	// 	};
+	// }
+	
+
+
+	// document.addEventListener("DOMContentLoaded", function () {
+	// 	var image = document.getElementById("mainImage");
+	// 	image.setAttribute('src', img.dataset.src);
+	// }
+	</script>
+</head>
+<body>
+	<button onclick="setImage()">Load image</button>
+	<br><br>
+	<img data-src="marvel-heroes/marvel.jpg" alt="">
+	<img data-src="marvel-heroes/avengers.jpg" alt="">
+	<img data-src="marvel-heroes/Deadpool.jpg" alt="">
+	<img data-src="marvel-heroes/ironman.jpg" alt="">
+	<img data-src="marvel-heroes/thor.jpeg" alt="">
+</body>
+</html>
