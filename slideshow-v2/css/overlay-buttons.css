@@ -11,44 +11,49 @@ div {
     vertical-align: bottom;
 }
 
-button {
+a {
     height: 400px;
     width: 70px;
     background-color: transparent;
     z-index:2;
     position: relative;
+    border-style: none;
+    top: 150px;
 }
 
 #left-button {
     position: relative;
-    left: 183px;
-
-    transition: all .2s ease;
-    -moz-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -ms-transition: all .2s ease-in;
+    left: -464px;
 }
 
 #right-button {
     position: relative;
-    left: 176px;
+    left: -64px;
+}
 
-    transition: all .2s ease;
-    -moz-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -ms-transition: all .2s ease-in;
+#hoverbox {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 600px;
+    z-index: 2;
+    display: inline;
 }
 
 #container {
-    left: 213px;
+    left: -179px;
     position: relative;
-    width: 548px;
+    display: flex;
+    width: 400px;
+    overflow: hidden;
 }
 
-#container:hover #left-button {
-    left: 254px;
+#right-button:hover{
+    left: 37px;
+}
+
+#container:hover > #right-button{
+    left: -134px;
     display: inline;
     transition: all .2s ease;
     -moz-transition: all .2s ease-in;
@@ -57,8 +62,12 @@ button {
     -ms-transition: all .2s ease-in;
 }
 
-#container:hover #right-button {
-    left: 106;
+#left-button:hover {
+    left: -226px;
+}
+
+#container:hover > #left-button  {
+    left: -400px;
     display: inline;
     z-index:2;
     transition: all .2s ease;
@@ -69,7 +78,7 @@ button {
 }
 
 #main-image {
-    left: 180px;
+    left: 0;
     position: relative;
 }
 
@@ -94,4 +103,3 @@ button {
     -o-transition: width 3s, height 2s, ease-in;
     -ms-transition: width 3s, height 2s, ease-in;
 }
-

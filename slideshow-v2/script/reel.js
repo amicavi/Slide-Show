@@ -27,7 +27,7 @@ changing the left position */
 function moveThemLeft () {
 	// var firstDiv, secondDiv, thirdDiv, fourthDiv, fifthDiv;
 	var firstLeft, secondLeft, thirdLeft, fourthLeft, fifthLeft;
-	var firtInter, secondInter, thirdInter, fourthInter, fifthInter;
+	var firstInter, secondInter, thirdInter, fourthInter, fifthInter;
 
 	//The following variables read the left position for each div
 
@@ -39,21 +39,21 @@ function moveThemLeft () {
 
 	// The following variables are created to get the inter value of the left position.
 
-	firtInter   = parseInt(firstLeft.split('px')[0]);
+	firstInter   = parseInt(firstLeft.split('px')[0]);
 	secondInter = parseInt(secondLeft.split('px')[0]);
 	thirdInter  = parseInt(thirdLeft.split('px')[0]);
 	fourthInter = parseInt(fourthLeft.split('px')[0]);
 	fifthInter  = parseInt(fifthLeft.split('px')[0]);
 
-/* After we get the left inter value position, it is time to set the conditionals 
-to know if is nessesary to substract more numer values */
+	/* After we get the left inter value position, it is time to set the conditionals 
+	to know if is nessesary to substract more numer values */
 
-	if (firtInter == 0) {
+	if (firstInter == 0) {
 		firstLeft = 816 + 'px';
 		setFirstLeft(firstLeft);
 		console.log('first ' + 'it was in 0');
-	}else if(firtInter > 0){
-		firstLeft = (firtInter - 204) + 'px';
+	}else if(firstInter > 0){
+		firstLeft = (firstInter - 204) + 'px';
 		setFirstLeft(firstLeft);
 		console.log('first ' + 'it was more than > 0');
 	};
