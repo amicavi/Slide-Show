@@ -24,11 +24,17 @@ a {
 #left-button {
     position: relative;
     left: -464px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 #right-button {
     position: relative;
     left: -64px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 #hoverbox {
@@ -54,12 +60,7 @@ a {
 
 #container:hover > #right-button{
     left: -134px;
-    display: inline;
-    transition: all .2s ease;
-    -moz-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -ms-transition: all .2s ease-in;
+    transition: left .2s ease;
 }
 
 #left-button:hover {
@@ -68,13 +69,11 @@ a {
 
 #container:hover > #left-button  {
     left: -400px;
-    display: inline;
-    z-index:2;
-    transition: all .2s ease;
-    -moz-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -ms-transition: all .2s ease-in;
+    transition: left .2s ease;
+    -moz-transition: left .2s ease;
+    -webkit-transition: left .2s ease;
+    -o-transition: left .2s ease;
+    -ms-transition: left .2s ease;
 }
 
 #main-image {
