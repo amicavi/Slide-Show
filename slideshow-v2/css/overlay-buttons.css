@@ -22,19 +22,29 @@ a {
 }
 
 #left-button {
-    position: relative;
-    left: -464px;
+    position: absolute;
+    left: -70px;
     justify-content: center;
     align-items: center;
     display: flex;
+    height: 100%;
 }
 
 #right-button {
-    position: relative;
-    left: -64px;
+    position: absolute;
+    left: auto;
+    right: -70px;
     justify-content: center;
     align-items: center;
     display: flex;
+    height: 100%;
+}
+
+button, button:focus, button:hover, button:active {
+   outline: none;
+   border: none;
+   box-shadow: none;
+   background: none;
 }
 
 #hoverbox {
@@ -54,21 +64,21 @@ a {
     overflow: hidden;
 }
 
-#right-button:hover{
+/*#right-button:hover{
     left: 37px;
-}
+}*/
 
 #container:hover > #right-button{
-    left: -134px;
-    transition: left .2s ease;
+    right: 0px;
+    transition: right .2s ease;
 }
 
-#left-button:hover {
+/*#left-button:hover {
     left: -226px;
-}
+}*/
 
 #container:hover > #left-button  {
-    left: -400px;
+    left: 0px;
     transition: left .2s ease;
     -moz-transition: left .2s ease;
     -webkit-transition: left .2s ease;
